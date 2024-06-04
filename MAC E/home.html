@@ -1,0 +1,187 @@
+<style>
+    body{
+        margin: 0;
+        font-family: arial;
+    }
+    .head-section{
+        width: 100%;
+        height: 8%;
+        background-color: azure;
+    }
+    .body-section{
+        width: 100%;
+        height: 92%;
+        background-image: url(image4.jfif);
+        background-size: cover;
+        animation: bgchange 20s linear infinite;
+        animation-duration: 10s;
+        transition: 2s;
+        position: relative;
+    }
+        @keyframes bgchange{
+        0%{
+            background-image: url(image.jfif);
+        }
+        20%{
+            background-image: url(image.jfif);
+        }
+        25%{
+            background-image: url(image1.jfif);
+        }
+        45%{
+            background-image: url(image1.jfif);
+        }
+        50%{
+            background-image: url(image3.jfif);
+        }
+        70%{
+            background-image: url(image3.jfif);
+        }
+        75%{
+            background-image: url(image4.jfif);
+        }
+        95%{
+            background-image: url(image4.jfif);
+        }
+    }.overlap{
+        border: none;
+        width: 900px;
+        height: 600px;
+        margin-left: 509px;
+        position: absolute;
+        margin-top: 150px;
+        background-color: rgba(0,0, 0, 0.5);
+        border-radius: 10px;
+        cursor: default;
+        box-shadow: 10px 10px 10px rgb(171, 113, 7);
+    }
+    .mac{
+        text-align: center;
+        color: rgb(171, 113, 7);
+        margin-bottom: 0;
+        margin-top: 50px;
+    }
+    .sologan{
+        text-align: center;
+        color: rgb(171, 113, 7);
+        font-family: cursive;
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+    .des{
+        text-align: center;
+        color: azure;
+        font-size: 25px;
+        line-height: 30px;
+        font-family: cursive;
+    }
+    .book{
+        margin-left: 270px;
+        height: 50px;
+        border-radius: 8px;
+        background-color: rgb(171, 113, 7);
+        color: azure;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+    }
+    .book:hover{
+        background-color: rgb(255, 166, 0);
+    }
+    .contact{
+        margin-left: 50px;
+        height: 50px;
+        border-radius: 8px;
+        background-color: rgb(171, 113, 7);
+        color: azure;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    .contact:hover{
+        background-color: rgb(255, 166, 0);
+    }
+    .contact-span{
+        color: rgb(171, 113, 7);
+        font-weight: bold;
+    }
+    .navdiv{
+        display: flex;
+        align-items: center;
+    }
+    li{
+        list-style: none;
+        display: inline-block;
+    }
+    li a{
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        margin-right: 25px;
+        cursor: pointer;
+        text-decoration: none ;
+        margin-left: 0px;
+    }
+    li a:hover{
+        color: rgb(255, 166, 0);
+    }
+    .bookservice{
+        margin-left: 0;
+        margin-right: 20px;
+        width: 150px;
+        height: 50px;
+        background-color: rgb(171, 113, 7);
+        color: azure;
+        border-radius: 8px;
+        border: none;
+        margin-top: 10PX;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .bookservice:hover{
+        background-color: rgb(255, 166, 0);
+    }
+    ul{
+        margin-left: 950px;
+    }
+</style>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mac E. ELECTRICALS</title>
+    </head>
+    <body>
+        <nav class="head-section">
+            <div class="navdiv">
+                <div class="logo"> Mac E. ELECTRICALS</div>
+                <ul>
+                    <li> <a href="home.html">HOME</a></li>
+                    <li> <a href="about">ABOUT</a></li>
+                    <li> <a href="projects">PROJECTS</a></li>
+                   <li> <a href="blog">OUR BLOG</a></li>
+                </ul>
+                <button class="bookservice">CONTACT</button>
+                <button class="bookservice">BOOK SERVICE</button>
+                
+            </div>
+        </nav>
+        <div class="body-section">
+            <div class="overlap">
+                <h1 class="mac">Mac E. ELECTRICALS</h1>
+                <p class="sologan">Light up-The World</p>
+                <p class="des">Welcome to Mac E. ELECTRICALS , where we bring you over
+                    15years of exprience delivering top-notch residential, commercial and industrial 
+                    electrical services.We offer a range of services including wiring,light
+                 installation, solar installation,inspection,CCTV camera installation, 
+                 maintance and emergency repairs.Our commitment to customer satistaction, safety 
+                 and compliance sets us apart.Please check our project portfolio to see the quality 
+                 of work you expect. <span class="contact-span">CONTACT US TODAY</span> for free consultation.
+                </p>
+                <button class="book">BOOK OUR SERVICES</button>
+                <button class="contact">CONTACT US</button>
+            </div>
+        </div>
+    </body>
+</html>
